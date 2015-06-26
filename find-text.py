@@ -1,7 +1,6 @@
 # Find text on site. This will search all fields and  content of portlets
 #
 # Assumptions:
-#   - "site" object
 #   - set-site.py
 #   - login-as-admin.py
 
@@ -52,7 +51,6 @@ portlet_managers = (
 
 all_content = site.portal_catalog(show_inactive=True)  # noqa
 
-# The name “Reading Room” should be changed to “FOIA Library” in all instances
 what_to_find = 'PUT YOUR TEXT HERE'.lower()
 
 
